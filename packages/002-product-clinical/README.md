@@ -1,6 +1,6 @@
 # Package 002 — Product and Clinical System
 
-**Status:** Source Intake
+**Status:** Product normalization complete; authoritative review pending
 
 **Started:** 2026-08-03
 
@@ -21,7 +21,7 @@ Every rule and mapping MUST carry one evidence class:
 - **CONFIRMED** — directly supported by a registered source or explicit Eden decision
 - **PROPOSED** — architecture offered for review, not a clinical or pharmacy fact
 - **OPEN** — required information is absent, conflicting, or ambiguous; the item
-  MUST use one of the five exact owner labels in the Open Decision Register
+  MUST use an exact owner label in the Open Decision Register
 
 `PROPOSED` content MUST NOT be represented as `CONFIRMED` through repetition or
 implementation. An open clinical rule remains assigned in the Gap Register; it
@@ -37,6 +37,14 @@ does not receive a plausible default.
 6. [Gap Register](05-gap-register.md)
 7. [Source Conflict Register](06-source-conflict-register.md)
 8. [Reusable Clinical Module Inventory](07-reusable-clinical-modules.md)
+9. [Lossless Source Row Register](08-source-row-register.csv)
+10. [Normalized Product Catalog](09-normalized-product-catalog.csv)
+11. [Formulation and SKU Map](10-formulation-and-sku-map.csv)
+12. [Duplicate and Ambiguity Register](11-duplicate-and-ambiguity-register.csv)
+13. [Non-Medication Item Register](12-non-medication-item-register.csv)
+14. [Source-to-Canonical Crosswalk](13-source-to-canonical-crosswalk.csv)
+15. [Product Launch Readiness Matrix](14-product-launch-readiness-matrix.csv)
+16. [Product Normalization Review](15-product-normalization-review.md)
 
 ## Entry criteria
 
@@ -62,10 +70,14 @@ The clinical-documentation bundle is registered and under semantic review. It
 contains important conflicts between Eden-approved and Beluga-source materials;
 affected rules cannot be promoted until the assigned owner resolves them.
 
-The Eden Pharmacy formulary is not present. Medication concepts can be identified
-from clinical sources, but Package, partner formulation, quantity, pharmacy-native
-identifier, and Pharmacy SKU normalization remain blocked.
+The Eden Pharmacy formulary is normalized. Pharmacy review is still required for
+native SKU identifiers, per-unit/package semantics, probable duplicates, and 19
+ambiguous groupings.
 
-The raw bundle is marked private/confidential and remains outside Git. The Canon
-repository stores hashes, provenance, normalized summaries, and conflicts rather
-than redistributing the source files.
+All 50 canonical medication concepts remain blocked from patient launch because
+Care/Optimize placement, state availability, final retail pricing, and marketplace
+visibility are not established. Thirty-eight also lack clinical documentation.
+
+The raw clinical bundle and pharmacy workbook remain outside Git. The Canon
+repository stores hashes, provenance, normalized outputs, and conflicts rather
+than redistributing private source files.

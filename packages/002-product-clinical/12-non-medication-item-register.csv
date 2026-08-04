@@ -1,0 +1,2 @@
+non_medication_item_id,source_reference,source_category,source_product,item_type,component_evidence,status,owner
+NONMED-001,SRC-003:Formulary Pricing!A101:J101,Hair Restoration - Topical,"Hair Loss Treatment Kit (Dutasteride Solution, Minoxidil Lotion in Atrevis Hydrogel, Ketoconazole Shampoo)",multi-medication kit,Dutasteride solution; minoxidil lotion in Atrevis hydrogel; ketoconazole shampoo,Not a canonical medication; exact component configurations unresolved,OPEN — PHARMACY

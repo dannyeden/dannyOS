@@ -22,9 +22,14 @@ for the exact language and context.
 | CON-002-012 | OD-075 | OPEN — CLINICAL | Ondansetron dosing | SRC-012 supplies a dose range; SRC-014 explicitly says dosing was not provided and needs clarification | No confirmed Formulation or prescribing instruction |
 | CON-002-013 | OD-076 | OPEN — CLINICAL | AutoRx prescribing authority | SRC-015 calls authorization the doctor's job but calls partner API release “prescribing”; Canon requires Provider authority and forbids Care Team prescribing | Model must separate Plan Authorization, Prescription Review/Issuance, and operational release without delegating clinical authority |
 | CON-002-014 | OD-077 | OPEN — CLINICAL | Teleform implementation versus approved GLP-1 policy | SRC-020 implements BMI and condition disqualifiers that differ from SRC-012, including insulin-dependent diabetes, CAD, and fatty-liver behavior | Existing code cannot be treated as protocol source of truth |
-| CON-002-015 | OD-078 | OPEN — DANIEL | Care and Optimize mapping | Neither name appears as a canonical patient-facing Product in SRC-004 | Sponsor constraints are confirmed, but their protocol and catalog identities remain unmapped |
+| CON-002-015 | OD-078 | OPEN — COMMERCIAL | Care and Optimize mapping | Neither name appears as a canonical patient-facing Product in SRC-004 | Sponsor constraints are confirmed, but their protocol and catalog identities remain unmapped |
 | CON-002-016 | OD-079 | OPEN — COMPLIANCE | Effective status and version precedence | Folder labels and archive timestamps do not establish approval signatures, effective dates, or supersession among documents | Sources remain candidates, not ratified Protocol Versions |
 | CON-002-017 | OD-080 | OPEN — CLINICAL | Metabolic-support age-based dose restriction | SRC-008 says the 0.5–0.6 dose is prohibited for patients over 40; SRC-012 and SRC-013 place the restriction on patients under 40 | The questionnaire cannot be implemented or corrected without an attributable Clinical decision |
+| CON-002-018 | OD-081 | OPEN — PHARMACY | Pricing-tier meaning | SRC-003 `Formulary Pricing` defines Tier 1/2/3 as 10%, 20%, and 30% below base; `Telehealth Pricing` defines the same labels as 30%, 40%, and 50% below base | Both namespaces remain separate; no downstream pricing rule may select one by tier label alone |
+| CON-002-019 | OD-082 | OPEN — PHARMACY | Bi-mix and Tri-mix duplicate identity | SRC-003 repeats each preparation under two categories with matching packages and prices but different spelling, strength wording, and total-mg values | Probable pairs remain separate configurations pending Pharmacy resolution |
+| CON-002-020 | OD-083 | OPEN — CLINICAL | Oral semaglutide formulation | SRC-012 and SRC-019 document oral semaglutide without identifying suspension versus troche; SRC-003 contains both dosage forms | Neither pharmacy formulation can be assigned to the oral protocol silently |
+| CON-002-021 | OD-084 | OPEN — CLINICAL | HRT composition and route coverage | SRC-003 offers variable hormone creams and troches across multiple ingredients; active and future-state HRT routes and ingredients differ across SRC-005, SRC-012, and SRC-018 | Exact Product-to-Protocol mappings remain blocked |
+| CON-002-022 | OD-085 | OPEN — PHARMACY | Clinical products without current Eden Pharmacy configuration | SRC-012 through SRC-014 document ondansetron, metformin, and tesamorelin, but none appears in authoritative current-availability source SRC-003 | Fulfillment source, external-pharmacy routing, or unavailability must be explicit |
 
 ## Non-conflicting confirmed architecture
 
@@ -37,3 +42,5 @@ for the exact language and context.
 - Missing medication-label detail can trigger a conditional document or photo
   verification step.
 - Existing implementation behavior is evidence, not clinical authority.
+- Pharmacy category labels and pricing tiers are source facts, not membership-
+  program mappings or final retail-price authority.

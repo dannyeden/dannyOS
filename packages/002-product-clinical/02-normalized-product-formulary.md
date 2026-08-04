@@ -1,11 +1,11 @@
 # Normalized Product and Formulary Model
 
-**Status:** Proposed architecture; source population blocked
+**Status:** Source population complete; authoritative review pending
 
 ## Purpose
 
-Define the normalization target for SRC-003 without asserting any medication,
-formulation, strength, package, or SKU data before the formulary is received.
+Define and populate the normalization target for SRC-003 while preserving every
+source row and separating pharmacy facts from proposed canonical groupings.
 
 ## Identity hierarchy
 
@@ -72,6 +72,30 @@ provenance, and effective interval.
 7. Obtain Pharmacy review before marking mappings `CONFIRMED`.
 8. Publish an immutable normalized snapshot; later changes supersede it.
 
-## Current state
+## Completed normalization snapshot
 
-No formulary records have been created. SRC-003 is missing.
+The 2026-08-03 snapshot contains:
+
+- 106 preserved source product rows;
+- 50 proposed stable patient-facing medication concepts;
+- 69 proposed formulations;
+- 101 medication pharmacy configurations after four exact duplicate rows share
+  canonical configurations;
+- six apparent duplicate groups, including two probable pairs left unmerged;
+- 19 ambiguous groupings requiring Pharmacy decisions; and
+- one multi-medication kit separated from the medication catalog.
+
+`CFG-EP-*` is an internal canonical configuration reference, not a pharmacy-native
+SKU. Every configuration maps to one or more exact SRC-003 workbook rows. Source
+price fields are pharmacy facts, but they are not approved retail prices.
+
+## Normalized outputs
+
+- [Lossless Source Row Register](08-source-row-register.csv)
+- [Normalized Product Catalog](09-normalized-product-catalog.csv)
+- [Formulation and SKU Map](10-formulation-and-sku-map.csv)
+- [Duplicate and Ambiguity Register](11-duplicate-and-ambiguity-register.csv)
+- [Non-Medication Item Register](12-non-medication-item-register.csv)
+- [Source-to-Canonical Crosswalk](13-source-to-canonical-crosswalk.csv)
+- [Product Launch Readiness Matrix](14-product-launch-readiness-matrix.csv)
+- [Product Normalization Review](15-product-normalization-review.md)

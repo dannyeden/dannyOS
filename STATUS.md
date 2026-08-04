@@ -42,8 +42,9 @@ suggestions, and decisions are current working constraints.
   models are developed.
 - Jurisdiction, compliance posture, named domain owners, ratification authority,
   identifier format, and external schema compatibility remain open.
-- Product-specific mappings have not yet been normalized from pharmacy and
-  clinical source documents.
+- The Eden Pharmacy formulary has been normalized into proposed canonical
+  concepts and source-linked configurations; Pharmacy, Clinical, Commercial,
+  and Compliance approvals remain open.
 - No technology-specific physical data model or API contract is canonical.
 
 All unresolved decisions are tracked in [OPEN-DECISIONS.md](OPEN-DECISIONS.md)
@@ -61,10 +62,11 @@ Foundation Draft 0.1 was informed by:
    were silent, the draft records proposed architecture rather than invented
    clinical rules.
 
-The Beluga clinical-documentation bundle was received after the 0.1 baseline and
-is registered in Package 002 with file-level hashes and authority classifications.
-The Eden Pharmacy formulary is still missing. No extracted rule becomes
-foundational until conflicts are resolved and its authoritative owner approves it.
+The Beluga clinical-documentation bundle and authoritative Eden Pharmacy
+formulary were received after the 0.1 baseline and are registered in Package 002
+with file-level hashes and authority classifications. Raw private sources remain
+outside Git. No proposed canonical grouping or extracted clinical rule becomes
+foundational until its authoritative owner approves it.
 
 ## Intentionally out of scope
 

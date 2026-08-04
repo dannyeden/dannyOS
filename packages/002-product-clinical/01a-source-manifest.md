@@ -1,10 +1,24 @@
 # Package 002 File-Level Source Manifest
 
+**Raw files committed:** No
+
+**Registered private source files:** 19
+
+## Eden Pharmacy formulary
+
+| Source ID | File | Authority classification | SHA-256 |
+| --- | --- | --- | --- |
+| SRC-003 | Copy of Telehealth_3Tier_Pricing_clean.xlsx | Authoritative Eden Pharmacy formulary within the explicitly permitted pharmacy-fact scope | `f17b923ba37e1b62a9d7c19be4ff29799a05189d36e59874f78b08d8998d5d0c` |
+
+The workbook contains 106 source product rows in `Formulary Pricing!2:107` and a
+second formula-linked pricing view in `Telehealth Pricing!11:116`. Both pricing
+schemes are preserved under distinct field names. Neither is final retail pricing.
+
+## Clinical documentation bundle
+
 **Bundle:** SRC-004
 
 **Received:** 2026-08-03
-
-**Raw files committed:** No
 
 `Eden-approved` below reflects the archive folder supplied by Daniel. `Beluga
 source` means useful partner material that cannot override an Eden-approved or
@@ -49,8 +63,10 @@ clinical effective dates.
 | --- | --- | --- | --- |
 | SRC-022 | Bask Beluga Health Services Agreement for URL.pdf | Contractual and compliance source; not a clinical-rule source | `9e63ba6dddcf61bf2f261ae9620caef79b82b945ec594de0655783eaa2e65657` |
 
-## Missing source
+## Pharmacy-source limitations
 
-No file in SRC-004 is an authoritative Eden Pharmacy formulary. Medication names
-and clinical dose guidance do not supply Pharmacy Organization, partner Package,
-quantity, NDC or native identifier, availability, or Pharmacy SKU mappings.
+SRC-003 does not contain native pharmacy SKU or NDC identifiers, effective dates,
+state availability, container metadata for every row, or unambiguous package
+semantics for all per-unit and multi-strength entries. Exact workbook row
+references therefore serve as lossless source identifiers until Pharmacy supplies
+or approves native identifiers.

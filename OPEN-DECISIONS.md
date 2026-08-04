@@ -10,6 +10,7 @@ This register is the only authoritative list of unresolved architectural and
 product decisions. Each item has exactly one accountable owner class:
 
 - `OPEN — DANIEL` — product, brand, commercial, or executive direction
+- `OPEN — COMMERCIAL` — delegated catalog, pricing, merchandising, or launch operations
 - `OPEN — CLINICAL` — clinical policy, professional authority, or care standards
 - `OPEN — PHARMACY` — formulary, dispensing, fulfillment, or pharmacy operations
 - `OPEN — COMPLIANCE` — legal, regulatory, privacy, security, or governance policy
@@ -130,6 +131,21 @@ are prohibited.
 | OD-075 | OPEN — CLINICAL | Approved ondansetron dose and protocol | CON-002-012 |
 | OD-076 | OPEN — CLINICAL | Clinical authority model for AutoRx plan authorization and later prescriptions | CON-002-013 |
 | OD-077 | OPEN — CLINICAL | Resolution of current teleform disqualifiers against approved GLP-1 policy | CON-002-014 |
-| OD-078 | OPEN — DANIEL | Canonical Care and Optimize Product identities and protocol mappings | CON-002-015 |
+| OD-078 | OPEN — COMMERCIAL | Canonical Care and Optimize Product identities and protocol mappings | CON-002-015 |
 | OD-079 | OPEN — COMPLIANCE | Effective-date, approval, and supersession precedence for SRC-004 documents | CON-002-016 |
 | OD-080 | OPEN — CLINICAL | Metabolic-support age-based dose restriction and correction of the contradictory source direction | CON-002-017 |
+| OD-081 | OPEN — PHARMACY | Intended downstream use and precedence of the workbook's two differently discounted Tier 1/2/3 pricing schemes | CON-002-018 |
+| OD-082 | OPEN — PHARMACY | Whether Bi-mix and Tri-mix category duplicates are the same pharmacy configurations and which total-mg fields are valid | CON-002-019 |
+| OD-083 | OPEN — CLINICAL | Which Eden Pharmacy oral semaglutide formulation implements the clinically documented oral-semaglutide protocol | CON-002-020 |
+| OD-084 | OPEN — CLINICAL | Which hormone cream and troche compositions and routes are supported by the active HRT protocol | CON-002-021 |
+| OD-085 | OPEN — PHARMACY | Fulfillment source or unavailability status for clinically documented ondansetron, metformin, and tesamorelin | CON-002-022 |
+| OD-086 | OPEN — COMMERCIAL | Care, Optimize, or multi-program mapping for each canonical medication after Clinical confirms applicable lab policy | Product launch matrix |
+| OD-087 | OPEN — COMMERCIAL | Approved patient-facing medication names and marketplace visibility | Product catalog |
+| OD-088 | OPEN — COMMERCIAL | Final retail pricing, discount presentation, and permitted use of pharmacy pricing fields | Pricing model |
+| OD-089 | OPEN — COMPLIANCE | State and jurisdiction availability for each launchable pharmacy configuration | Product launch matrix |
+| OD-090 | OPEN — ENGINEERING | Versioned import, canonical identifier, and source-snapshot mechanics for pharmacy configurations | Product normalization |
+| OD-091 | OPEN — COMMERCIAL | Category launch scope and sequencing across weight, hormone, wellness, sexual-health, ketamine, dermatology, and hair-restoration concepts | Product launch matrix |
+| OD-092 | OPEN — COMMERCIAL | Which pharmacy configurations remain fulfillment-only versus eligible for patient marketplace presentation | Product launch matrix |
+| OD-093 | OPEN — PHARMACY | Native SKU identifiers, per-unit versus package pricing semantics, and splitting rules for multi-strength source rows | Formulation and SKU map |
+| OD-094 | OPEN — CLINICAL | Protocol, intake, contraindication, lab, visit, and media coverage for the 38 canonical medications lacking clinical documentation | Product launch matrix |
+| OD-095 | OPEN — PHARMACY | Resolution of the 19 ambiguous groupings and approval of the proposed 69 formulations and 101 pharmacy configurations | Duplicate and ambiguity register |

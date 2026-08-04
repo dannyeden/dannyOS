@@ -55,6 +55,19 @@ answers, gates, and outcome rules remain source-versioned.
 No source in SRC-004 establishes hair, dermatology, body, or other diagnostic
 photo requirements. Those remain absent rather than inferred.
 
+## Formulary reconciliation
+
+SRC-003 supplies pharmacy configurations but does not create clinical modules.
+Clinical documentation exists for 12 of the 50 proposed medication concepts:
+semaglutide, tirzepatide, bupropion/naltrexone, progesterone, testosterone,
+custom hormone cream, custom hormone troche, glutathione, methylcobalamin,
+MICC, NAD+, and sermorelin. Several are only partial or conflicted mappings.
+
+The remaining 38 concepts receive no inferred intake, contraindication, lab,
+visit, consent, media, or protocol requirement. In particular, the workbook's
+wellness or metabolic category and the fact that a medication is a peptide do
+not establish Optimize membership or a lab gate.
+
 ## AutoRx workflow decomposition
 
 SRC-015 supports separate canonical objects for:

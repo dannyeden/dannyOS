@@ -4,3 +4,4 @@
 *.swp
 *.tmp
 packages/**/raw-sources/
+sources/private/
