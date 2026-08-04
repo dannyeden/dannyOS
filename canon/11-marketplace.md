@@ -74,6 +74,9 @@ clinical reason codes; presenting personalized ordering as medical advice.
 
 ## Open Decisions
 
-Default visibility policy, ranking objectives and fairness review, and retention
-of presentation snapshots and interaction detail.
+- OD-033 — OPEN — DANIEL
+- OD-034 — OPEN — COMPLIANCE
+- OD-035 — OPEN — COMPLIANCE
 
+Definitions and disposition are centralized in the
+[Open Decision Register](../OPEN-DECISIONS.md).

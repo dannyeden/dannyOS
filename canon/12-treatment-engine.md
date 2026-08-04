@@ -31,6 +31,10 @@ implement portions of the plan without owning its clinical intent.
 - Only authorized clinical actors approve safety-impacting plan changes.
 - Each active intervention states goal, instructions, effective interval, and monitoring.
 - A fulfillment failure does not silently cancel clinical intent; it creates an exception.
+- Membership is required before treatment initiation, but membership billing
+  dunning MUST NOT transition, overwrite, or discontinue an existing Treatment Plan.
+- A dunning-related Fill freeze is recorded in Commerce and Operations and remains
+  distinguishable from a Provider decision to pause or discontinue treatment.
 - Stopping, pausing, replacing, and completing treatment are distinct changes.
 - Current plan views are derived from preserved versions and changes.
 
@@ -57,6 +61,7 @@ versioned. Patient-specific plans are attributable records, not reusable config.
 ## Acceptance Criteria
 
 - The plan at any historical time can be reconstructed.
+- Membership dunning can coexist with an active Treatment Plan and a blocked new Fill.
 - Clinical intent survives pharmacy or product mapping changes.
 - Required monitoring produces actionable work and escalation.
 - Member-reported facts remain distinct from clinician decisions.
@@ -73,6 +78,11 @@ closing treatment when an order fails; product-specific treatment tables.
 
 ## Open Decisions
 
-Plan granularity across conditions, collaborative approval rules, and ownership of
-adherence assertions and interventions.
+- OD-036 — OPEN — CLINICAL
+- OD-037 — OPEN — CLINICAL
+- OD-038 — OPEN — CLINICAL
+- OD-060 — OPEN — DANIEL
+- OD-061 — OPEN — CLINICAL
 
+Definitions and disposition are centralized in the
+[Open Decision Register](../OPEN-DECISIONS.md).

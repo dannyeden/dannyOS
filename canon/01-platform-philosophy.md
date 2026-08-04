@@ -111,6 +111,8 @@ The principles themselves MUST NOT be runtime configuration.
 
 ## Open Decisions
 
-- Which architecture rules will be enforced automatically in CI.
-- The minimum approval quorum for constitutional changes.
+- OD-005 — OPEN — ENGINEERING
+- OD-006 — OPEN — DANIEL
 
+Definitions and disposition are centralized in the
+[Open Decision Register](../OPEN-DECISIONS.md).

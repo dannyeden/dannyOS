@@ -27,6 +27,8 @@ technical teams do not use the same word for different concepts.
 | Actor | Person or system performing an attributable action | The subject of the action |
 | Organization | A legal or operational entity participating in the platform | A user role |
 | Care relationship | Governed relationship among a patient and clinical organization or professionals | A single encounter |
+| Provider | Credentialed clinical actor operating within verified role, jurisdiction, and scope | Any care-team or support actor |
+| Care Team | Operational and care-support relationship; membership alone grants no clinical decision or prescribing authority | Provider authority |
 | Encounter | A bounded clinical interaction | Entire treatment history |
 | Protocol | Versioned clinical policy defining required and allowed care behavior | Product configuration |
 | Evaluation | Process that gathers evidence for an accountable determination | Questionnaire alone |
@@ -36,10 +38,15 @@ technical teams do not use the same word for different concepts.
 | Offer | Versioned terms presented to an eligible audience | Clinical eligibility |
 | Price | Versioned monetary amount and currency under defined conditions | Benefit or discount logic |
 | Membership | Governed commercial relationship that may grant access and benefits | Medication purchase |
+| Billing Option | Versioned selectable membership payment terms, such as cadence and timing | Membership Plan or Billing Arrangement |
+| Dunning | Billing-collection state following an unresolved payment failure | Treatment discontinuation or clinical ineligibility |
 | Benefit | Versioned entitlement applied under a membership or program | Price itself |
 | Order | Request for goods or services after required gates | Prescription |
 | Payment authorization | Permission to reserve or later capture funds | Captured payment |
 | Prescription | Clinician-authorized medication instruction | Order or pharmacy SKU |
+| Formulation | Defined medication composition and dosage form independent of patient-facing Product | Product or pharmacy inventory identity |
+| Pharmacy SKU | Pharmacy-specific dispensable package or inventory identity | Product, Formulation, or Prescription |
+| Fill | A fulfillment instance against an authorized Prescription | Treatment Plan or Prescription itself |
 | Fulfillment | Operational work to deliver an approved good or service | Clinical approval |
 | Timeline event | Member-centered, provenance-linked record that something occurred | Domain event transport message |
 | Domain event | Immutable statement from an owning domain that a fact became true | Command or request |
@@ -57,6 +64,8 @@ technical teams do not use the same word for different concepts.
   redefine Protocols.
 - A Clinical Decision MAY authorize a Prescription; a Prescription MAY permit an
   Order to proceed; neither guarantees Fulfillment.
+- Product, Formulation, Pharmacy SKU, Prescription, and Fill have distinct
+  identifiers and lifecycles even when an implementation maps them closely.
 - A Domain Event MAY produce one or more member-visible Timeline Events, but the
   two records serve different purposes.
 
@@ -111,5 +120,9 @@ semantic meaning MUST NOT vary by tenant or market.
 
 ## Open Decisions
 
-- Canonical distinction between therapy, treatment, and care program.
-- Whether “member” remains the universal relationship term across markets.
+- OD-007 — OPEN — CLINICAL
+- OD-008 — OPEN — DANIEL
+- OD-062 — OPEN — CLINICAL
+
+Definitions and disposition are centralized in the
+[Open Decision Register](../OPEN-DECISIONS.md).

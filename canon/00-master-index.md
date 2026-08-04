@@ -94,7 +94,10 @@ The Canon is coherent when:
 
 ## Open decisions
 
-- Legal and regulatory jurisdiction assumptions for the first implementation.
-- Formal ratifiers and named domain owners.
-- The compatibility policy for externally published schemas.
-- Whether the public platform name remains HealthOS or becomes DannyOS.
+- OD-001 — OPEN — COMPLIANCE
+- OD-002 — OPEN — DANIEL
+- OD-003 — OPEN — ENGINEERING
+- OD-004 — OPEN — DANIEL
+
+Definitions and disposition are centralized in the
+[Open Decision Register](../OPEN-DECISIONS.md).

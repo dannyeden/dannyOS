@@ -145,7 +145,9 @@ the safety envelope configuration cannot exceed.
 
 ## Open Decisions
 
-- Whether communications is an Operations capability or a separate domain.
-- Ownership boundary between Medical Media and Source Artifact storage.
-- Ownership of experimentation assignment versus analytics evaluation.
+- OD-014 — OPEN — DANIEL
+- OD-015 — OPEN — ENGINEERING
+- OD-016 — OPEN — DANIEL
 
+Definitions and disposition are centralized in the
+[Open Decision Register](../OPEN-DECISIONS.md).

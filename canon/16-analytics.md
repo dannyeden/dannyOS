@@ -79,5 +79,10 @@ queries as contracts; training features with unknown lineage; silent cohort drif
 
 ## Open Decisions
 
-Semantic-layer technology, initial metric governance body, identity-resolution
-policy for analytics, and boundaries for secondary data use.
+- OD-053 — OPEN — ENGINEERING
+- OD-054 — OPEN — DANIEL
+- OD-055 — OPEN — COMPLIANCE
+- OD-056 — OPEN — COMPLIANCE
+
+Definitions and disposition are centralized in the
+[Open Decision Register](../OPEN-DECISIONS.md).

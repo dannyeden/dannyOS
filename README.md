@@ -24,11 +24,14 @@ extend the Canon, but may not silently contradict it.
 
 ## Start here
 
-1. Read the [Canon master index](canon/00-master-index.md).
-2. Use the [platform language](canon/02-platform-language.md) consistently.
-3. Propose cross-domain or constitutional changes through an
+1. Read the current [repository status](STATUS.md).
+2. Read the [Canon master index](canon/00-master-index.md).
+3. Use the [platform language](canon/02-platform-language.md) consistently.
+4. Resolve or assign work through the
+   [Open Decision Register](OPEN-DECISIONS.md).
+5. Propose cross-domain or constitutional changes through an
    [RFC](rfcs/README.md).
-4. Record accepted decisions in the
+6. Record accepted decisions in the
    [decision log](canon/17-decision-log.md).
 
 ## Status
@@ -36,4 +39,3 @@ extend the Canon, but may not silently contradict it.
 The Canon is in **Foundation Draft**. Draft content describes the current design
 direction but is not immutable. A chapter becomes normative only when the master
 index marks it `Ratified`.
-

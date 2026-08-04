@@ -42,6 +42,13 @@ the resulting permitted facts.
   version, evidence set, rationale, scope, and time.
 - Missing required evidence MUST NOT be interpreted as negative evidence.
 - Overrides require explicit permission, reason, and policy-defined boundaries.
+- An authorized Provider MAY reject or modify a system recommendation within
+  verified scope. The resulting decision records the Provider, rationale, and
+  recommendation disposition; this authority does not bypass a non-overridable
+  Protocol constraint.
+- Care Team membership alone MUST NOT authorize prescribing. A Prescription
+  requires separately verified Provider authority, credential, jurisdiction, and
+  scope at decision time.
 - Commercial eligibility never converts a negative clinical determination.
 - Amendments and corrections preserve the original clinical record.
 
@@ -73,6 +80,8 @@ cannot edit or suppress them.
 
 - A decision is reproducible from preserved policy and evidence references.
 - Authority and jurisdiction are verified at decision time.
+- Recommendation overrides are attributable to the authorized Provider.
+- Care-team actors without verified Provider authority cannot prescribe.
 - Missing, conflicting, and stale evidence are distinguishable.
 - Product changes cannot silently alter active clinical policy.
 
@@ -89,6 +98,13 @@ commercial staff editing clinical requirements.
 
 ## Open Decisions
 
-Initial credentialing source, protocol governance quorum, evidence freshness
-model, and amendment versus reevaluation rules.
+- OD-020 — OPEN — COMPLIANCE
+- OD-021 — OPEN — CLINICAL
+- OD-022 — OPEN — CLINICAL
+- OD-023 — OPEN — CLINICAL
+- OD-061 — OPEN — CLINICAL
+- OD-062 — OPEN — CLINICAL
+- OD-063 — OPEN — CLINICAL
 
+Definitions and disposition are centralized in the
+[Open Decision Register](../OPEN-DECISIONS.md).

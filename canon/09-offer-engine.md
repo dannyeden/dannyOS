@@ -75,6 +75,9 @@ clinical evidence; a single eligibility boolean with no dimension or reason.
 
 ## Open Decisions
 
-Offer reservation semantics, copy version ownership, and fairness constraints for
-commercial audience optimization.
+- OD-027 — OPEN — DANIEL
+- OD-028 — OPEN — DANIEL
+- OD-029 — OPEN — COMPLIANCE
 
+Definitions and disposition are centralized in the
+[Open Decision Register](../OPEN-DECISIONS.md).

@@ -142,6 +142,8 @@ policy-enforced safety boundaries and cannot be weakened by commercial config.
 
 ## Open Decisions
 
-- Which state machines are configured versus implemented as domain code.
-- Standard retention and visibility policy for rejected transition attempts.
+- OD-012 — OPEN — ENGINEERING
+- OD-013 — OPEN — COMPLIANCE
 
+Definitions and disposition are centralized in the
+[Open Decision Register](../OPEN-DECISIONS.md).

@@ -34,6 +34,9 @@ issues a Partner Assignment; the pharmacy owns its external fulfillment lifecycl
 - A reroute preserves previous attempts and prevents duplicate active fulfillment.
 - Partner SKU mappings are versioned and never redefine Product identity.
 - Submission uses idempotency and reconciliation controls.
+- A member in billing dunning is ineligible for a new Fill assignment under the
+  universal membership policy. The engine records the operational hold without
+  altering the Prescription or Treatment Plan.
 
 ## State Machines
 
@@ -60,6 +63,7 @@ are versioned. Prescription scope and jurisdictional constraints are not overrid
 - Pharmacy changes do not change Product or Treatment Plan identity.
 - Every assignment includes evaluated candidates and reason codes.
 - Retries and reroutes cannot create duplicate fulfillment.
+- Dunning freezes new Fills without representing clinical discontinuation.
 - Partner disclosures are purpose-limited and auditable.
 
 ## Future Extensions
@@ -74,6 +78,12 @@ full clinical records when a minimal fulfillment payload suffices.
 
 ## Open Decisions
 
-Candidate scoring governance, real-time capability freshness, reroute consent, and
-source of truth for partner formulary and jurisdiction data.
+- OD-039 — OPEN — PHARMACY
+- OD-040 — OPEN — PHARMACY
+- OD-041 — OPEN — PHARMACY
+- OD-042 — OPEN — PHARMACY
+- OD-043 — OPEN — COMPLIANCE
+- OD-060 — OPEN — DANIEL
 
+Definitions and disposition are centralized in the
+[Open Decision Register](../OPEN-DECISIONS.md).

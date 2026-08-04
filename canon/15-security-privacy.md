@@ -84,5 +84,12 @@ boolean; PHI in logs; immutable retention claims that ignore lawful privacy duti
 
 ## Open Decisions
 
-Initial legal jurisdictions, control framework mapping, data-classification levels,
-retention authorities, and member-facing access transparency.
+- OD-001 — OPEN — COMPLIANCE
+- OD-048 — OPEN — COMPLIANCE
+- OD-049 — OPEN — COMPLIANCE
+- OD-050 — OPEN — COMPLIANCE
+- OD-051 — OPEN — COMPLIANCE
+- OD-052 — OPEN — COMPLIANCE
+
+Definitions and disposition are centralized in the
+[Open Decision Register](../OPEN-DECISIONS.md).

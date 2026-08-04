@@ -38,6 +38,9 @@ resolve to partner SKUs, but the Product does not expose or own those SKUs.
 - Existing outcomes retain the exact Product Version used.
 - Product retirement blocks new initiation but does not erase ongoing care.
 - Formulation substitution requires explicit clinical and fulfillment policy.
+- Product, Formulation, Strength, Package, and Pharmacy SKU MUST remain separate
+  identities with versioned mappings; their normalized hierarchy is defined from
+  source material in Package 002.
 
 ## State Machines
 
@@ -82,5 +85,9 @@ code paths; deleting retired products; copying Protocol rules into Product JSON.
 
 ## Open Decisions
 
-The boundary between Product Variant and treatment option; approval workflow for
-non-clinical content; compatibility rules for changing capability composition.
+- OD-017 — OPEN — CLINICAL
+- OD-018 — OPEN — DANIEL
+- OD-019 — OPEN — ENGINEERING
+
+Definitions and disposition are centralized in the
+[Open Decision Register](../OPEN-DECISIONS.md).

@@ -32,6 +32,10 @@ acceptance creates a new decision in the consuming domain.
 
 - Every output declares intended use, subject, evidence, generation context, and validity.
 - Clinical use cases define risk tier, required review, and prohibited automation.
+- An authorized Provider MAY reject or modify a recommendation within verified
+  scope; Intelligence preserves the original suggestion and review disposition.
+- A Care Team actor without Provider authority MUST NOT convert a recommendation
+  into a Prescription or clinical decision.
 - Unsupported claims and evidence conflicts remain visible to reviewers.
 - Feedback MUST NOT automatically become training data without authorized policy.
 - Model or prompt changes create a new release and are evaluated before activation.
@@ -61,6 +65,7 @@ selection are versioned within a non-overridable safety and authority envelope.
 
 - An output can be reproduced or forensically explained from preserved context.
 - Suggestions never masquerade as source facts or accountable decisions.
+- Provider overrides preserve both original recommendation and recorded rationale.
 - Unsafe releases can be disabled without losing historical context.
 - Quality and safety are measured per use case, population, and release.
 
@@ -76,6 +81,11 @@ training on all feedback by default; using confidence alone as authorization.
 
 ## Open Decisions
 
-Initial risk taxonomy, release approval bodies, reproducibility requirements for
-third-party models, and member explanation and contestability standards.
+- OD-044 — OPEN — COMPLIANCE
+- OD-045 — OPEN — COMPLIANCE
+- OD-046 — OPEN — ENGINEERING
+- OD-047 — OPEN — COMPLIANCE
+- OD-063 — OPEN — CLINICAL
 
+Definitions and disposition are centralized in the
+[Open Decision Register](../OPEN-DECISIONS.md).

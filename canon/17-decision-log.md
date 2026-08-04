@@ -83,10 +83,63 @@ authority remain visible in the data model.
 **Consequences:** Suggestions carry evidence and generation context; downstream
 systems cannot treat them as clinical decisions without an authorized transition.
 
+### AD-005 — Coordinate membership dunning without rewriting treatment
+
+**Date:** 2026-08-03
+
+**Status:** Accepted
+
+**Decision:** Membership is a universal prerequisite for treatment initiation.
+During billing dunning, existing treatment continues and new medication Fills
+freeze. Membership, billing, Treatment Plan, Prescription, and Fill remain
+separate lifecycles.
+
+**Rationale:** Financial collection state must control permitted commercial and
+fulfillment actions without falsifying clinical intent or destroying longitudinal
+history.
+
+**Consequences:** A dunning transition cannot discontinue a Treatment Plan or
+void a Prescription. Commerce publishes billing state; Operations enforces the
+new-Fill hold; Clinical history remains unchanged.
+
+### AD-006 — Separate Provider authority from Care Team access
+
+**Date:** 2026-08-03
+
+**Status:** Accepted
+
+**Decision:** Care Team membership alone grants no prescribing authority.
+Authorized Providers may reject or modify recommendations within verified scope,
+and the resulting decision is independently attributable.
+
+**Rationale:** Collaboration and decision support must not blur licensed clinical
+authority or allow generated output to become an unauthorized prescription.
+
+**Consequences:** Prescribing verifies Provider authority at decision time. The
+platform preserves the recommendation, its disposition, and Provider rationale.
+
+### AD-007 — Separate Product, Formulation, and pharmacy identity
+
+**Date:** 2026-08-03
+
+**Status:** Accepted
+
+**Decision:** Product, Formulation, Strength, Package, and Pharmacy SKU are
+separate identities connected through versioned mappings.
+
+**Rationale:** Patient-facing products must survive formulation, package, and
+fulfillment-partner changes without losing historical or clinical meaning.
+
+**Consequences:** Package 002 will normalize the hierarchy from source material;
+implementations cannot use a pharmacy SKU as Product identity.
+
 ## Open decisions
 
-- Initial jurisdiction and regulatory posture.
-- Named ratification authorities and domain owners.
-- Canon versioning and release strategy.
-- Application repository naming and dependency mechanism.
+- OD-001 — OPEN — COMPLIANCE
+- OD-002 — OPEN — DANIEL
+- OD-057 — OPEN — ENGINEERING
+- OD-058 — OPEN — DANIEL
+- OD-059 — OPEN — ENGINEERING
 
+Definitions and disposition are centralized in the
+[Open Decision Register](../OPEN-DECISIONS.md).

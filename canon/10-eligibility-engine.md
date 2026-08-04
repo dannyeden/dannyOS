@@ -75,5 +75,9 @@ Commerce; returning sensitive clinical reasons to advertising systems.
 
 ## Open Decisions
 
-Home for the federated orchestration contract, standard reason taxonomy, and
-latency versus freshness expectations by use case.
+- OD-030 — OPEN — ENGINEERING
+- OD-031 — OPEN — DANIEL
+- OD-032 — OPEN — ENGINEERING
+
+Definitions and disposition are centralized in the
+[Open Decision Register](../OPEN-DECISIONS.md).

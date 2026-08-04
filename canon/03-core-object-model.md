@@ -159,7 +159,9 @@ MAY be mutable; approval publishes an immutable version.
 
 ## Open Decisions
 
-- ULID, UUIDv7, or another canonical identifier format.
-- Required precision and policy for estimated clinical occurrence times.
-- The boundary between Source Artifact storage and specialized media storage.
+- OD-009 — OPEN — ENGINEERING
+- OD-010 — OPEN — CLINICAL
+- OD-011 — OPEN — ENGINEERING
 
+Definitions and disposition are centralized in the
+[Open Decision Register](../OPEN-DECISIONS.md).
