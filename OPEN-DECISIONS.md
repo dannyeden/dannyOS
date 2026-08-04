@@ -144,8 +144,20 @@ are prohibited.
 | OD-088 | OPEN — COMMERCIAL | Final retail pricing, discount presentation, and permitted use of pharmacy pricing fields | Pricing model |
 | OD-089 | OPEN — COMPLIANCE | State and jurisdiction availability for each launchable pharmacy configuration | Product launch matrix |
 | OD-090 | OPEN — ENGINEERING | Versioned import, canonical identifier, and source-snapshot mechanics for pharmacy configurations | Product normalization |
-| OD-091 | OPEN — COMMERCIAL | Category launch scope and sequencing across weight, hormone, wellness, sexual-health, ketamine, dermatology, and hair-restoration concepts | Product launch matrix |
+| OD-091 | OPEN — COMMERCIAL | Governance, authorized administrators, and initial values for a configurable launch-priority field across product categories; this is not one permanent sequence decision for all products | Product launch matrix |
 | OD-092 | OPEN — COMMERCIAL | Which pharmacy configurations remain fulfillment-only versus eligible for patient marketplace presentation | Product launch matrix |
 | OD-093 | OPEN — PHARMACY | Native SKU identifiers, per-unit versus package pricing semantics, and splitting rules for multi-strength source rows | Formulation and SKU map |
 | OD-094 | OPEN — CLINICAL | Protocol, intake, contraindication, lab, visit, and media coverage for the 38 canonical medications lacking clinical documentation | Product launch matrix |
 | OD-095 | OPEN — PHARMACY | Resolution of the 19 ambiguous groupings and approval of the proposed 69 formulations and 101 pharmacy configurations | Duplicate and ambiguity register |
+
+## Package 003 domain, rules, evidence, and event architecture
+
+| ID | Owner | Decision required | Package location |
+| --- | --- | --- | --- |
+| OD-096 | OPEN — DANIEL | Named accountable stewards for the six bounded contexts and authority for cross-domain arbitration | 01-bounded-contexts |
+| OD-098 | OPEN — ENGINEERING | Initial Domain Event delivery, per-aggregate ordering, schema compatibility, replay authorization, and side-effect suppression standard | 05-event-architecture |
+| OD-100 | OPEN — DANIEL | Default member-visible Timeline categories, explanation depth, and correction/contestability experience | 06-health-timeline |
+| OD-101 | OPEN — COMPLIANCE | Multi-tenant isolation, cross-organization longitudinal access, portability, employer boundaries, and tenant-offboarding requirements | 08-multi-tenant-boundaries |
+| OD-102 | OPEN — DANIEL | Ratification and ongoing stewardship of the HealthOS Design Canon and Garden of Eden experience standard | 09-design-canon |
+| OD-103 | OPEN — ENGINEERING | Rule expression, registry, simulation, conformance, portability, and runtime-selection standard | 03-rules-engine |
+| OD-105 | OPEN — CLINICAL | Whether Provider judgment is represented as Evidence, decision rationale, or both, including minimum linkage and duplication rules | 04-evidence-model |

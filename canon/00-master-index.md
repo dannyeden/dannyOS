@@ -70,6 +70,11 @@ change occurs through an owned command or a published event contract.
 | [16 — Analytics](16-analytics.md) | Foundation Draft | Operational and longitudinal measurement contracts |
 | [17 — Decision Log](17-decision-log.md) | Active | Accepted architecture decisions |
 
+## Active architecture packages
+
+- [Package 002 — Product and Clinical System](../packages/002-product-clinical/README.md)
+- [Package 003 — Domain Model, Rules Engine, and Event Architecture](../packages/003-domain-rules-events/README.md)
+
 ## Ratification process
 
 1. A chapter begins as `Foundation Draft` or `Draft`.

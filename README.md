@@ -33,6 +33,8 @@ extend the Canon, but may not silently contradict it.
    [RFC](rfcs/README.md).
 6. Record accepted decisions in the
    [decision log](canon/17-decision-log.md).
+7. Review the active
+   [Package 003 domain, rules, and event architecture](packages/003-domain-rules-events/README.md).
 
 ## Status
 
