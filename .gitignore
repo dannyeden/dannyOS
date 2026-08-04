@@ -3,4 +3,4 @@
 .vscode/
 *.swp
 *.tmp
-
+packages/**/raw-sources/

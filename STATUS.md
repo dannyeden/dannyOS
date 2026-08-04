@@ -1,6 +1,6 @@
 # Repository Status
 
-**Current package:** Package 001 — Canon Foundation
+**Current package:** Package 002 — Product and Clinical System
 
 **Baseline:** Foundation Draft 0.1
 
@@ -61,9 +61,10 @@ Foundation Draft 0.1 was informed by:
    were silent, the draft records proposed architecture rather than invented
    clinical rules.
 
-The Eden Pharmacy formulary and clinical documentation are required sources for
-Package 002. They are not part of the 0.1 baseline and must be registered with
-provenance before their rules become foundational.
+The Beluga clinical-documentation bundle was received after the 0.1 baseline and
+is registered in Package 002 with file-level hashes and authority classifications.
+The Eden Pharmacy formulary is still missing. No extracted rule becomes
+foundational until conflicts are resolved and its authoritative owner approves it.
 
 ## Intentionally out of scope
 
@@ -74,9 +75,10 @@ provenance before their rules become foundational.
 - Vendor selection and detailed runtime topology
 - Final UI, copy, analytics metrics, or model selection
 
-## Next package
+## Active package
 
-**Package 002 — Product and Clinical System** will:
+**Package 002 — Product and Clinical System** is establishing the source-backed
+product and clinical model. It will:
 
 - normalize formulary products, medications, formulations, strengths, packages,
   and pharmacy SKUs;

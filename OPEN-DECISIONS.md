@@ -111,3 +111,25 @@ are prohibited.
 | OD-057 | OPEN — ENGINEERING | Canon release, versioning, and compatibility strategy | 17 |
 | OD-058 | OPEN — DANIEL | Production application repository name | 17 |
 | OD-059 | OPEN — ENGINEERING | Mechanism for implementations to declare and consume a Canon version | 17 |
+
+## Package 002 source conflicts
+
+| ID | Owner | Decision required | Package location |
+| --- | --- | --- | --- |
+| OD-064 | OPEN — CLINICAL | Insulin-dependent Type 2 diabetes eligibility for GLP-1 treatment | CON-002-001 |
+| OD-065 | OPEN — CLINICAL | GLP-1 dose-break intervals and restart actions | CON-002-002 |
+| OD-066 | OPEN — CLINICAL | Weight-management initiation, continuation, and discontinuation BMI gates | CON-002-003 |
+| OD-067 | OPEN — CLINICAL | Approved GLP-1 titration ladders, dose values, and discretion bounds | CON-002-004 |
+| OD-068 | OPEN — CLINICAL | HRT age eligibility and lab gate | CON-002-005 |
+| OD-069 | OPEN — CLINICAL | HRT family-cancer-history eligibility and consent routing | CON-002-006 |
+| OD-070 | OPEN — CLINICAL | HRT gallbladder eligibility criteria | CON-002-007 |
+| OD-071 | OPEN — CLINICAL | HRT drug-interaction outcome and Provider-review path | CON-002-008 |
+| OD-072 | OPEN — CLINICAL | Approved HRT formulation routes and alternatives | CON-002-009 |
+| OD-073 | OPEN — CLINICAL | Female-testosterone availability, labs, and synchronous-visit policy | CON-002-010 |
+| OD-074 | OPEN — CLINICAL | Metabolic-support medication coverage and monitoring labs | CON-002-011 |
+| OD-075 | OPEN — CLINICAL | Approved ondansetron dose and protocol | CON-002-012 |
+| OD-076 | OPEN — CLINICAL | Clinical authority model for AutoRx plan authorization and later prescriptions | CON-002-013 |
+| OD-077 | OPEN — CLINICAL | Resolution of current teleform disqualifiers against approved GLP-1 policy | CON-002-014 |
+| OD-078 | OPEN — DANIEL | Canonical Care and Optimize Product identities and protocol mappings | CON-002-015 |
+| OD-079 | OPEN — COMPLIANCE | Effective-date, approval, and supersession precedence for SRC-004 documents | CON-002-016 |
+| OD-080 | OPEN — CLINICAL | Metabolic-support age-based dose restriction and correction of the contradictory source direction | CON-002-017 |
