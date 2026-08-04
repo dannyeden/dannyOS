@@ -18,8 +18,8 @@ listed owner.
 | GAP-002-010 | OPEN — COMPLIANCE | The bundle does not establish signed approvals, effective dates, or document supersession | Cannot determine which candidate rule was effective at a historical time | Approval and effective-date evidence |
 | GAP-002-011 | OPEN — CLINICAL | Twenty-two material source conflicts remain assigned in the Source Conflict Register | Cannot publish affected Protocol Versions | Recorded resolution for every conflict |
 | GAP-002-012 | OPEN — PHARMACY | Nineteen source groupings have incomplete, multi-valued, or conflicting formulation/package semantics | Cannot approve all proposed formulations and configurations | OD-093 and OD-095 decisions |
-| GAP-002-013 | OPEN — COMPLIANCE | State and jurisdiction availability is absent from SRC-003 | No configuration is state-launch-ready | OD-089 decision and authoritative routing source |
-| GAP-002-014 | OPEN — COMMERCIAL | Pharmacy pricing fields are not final retail prices and marketplace visibility is unstated | No concept is commercially launch-ready | OD-087, OD-088, and OD-092 decisions |
+| GAP-002-013 | OPEN — COMPLIANCE | State and jurisdiction availability is absent from SRC-003 | Jurisdiction readiness remains `UNKNOWN`; this is not evidence of operational unavailability | OD-089 decision and authoritative routing source |
+| GAP-002-014 | OPEN — COMMERCIAL | Pharmacy pricing fields are not final retail prices and marketplace visibility is unstated | Commercial configuration and marketplace content remain `INCOMPLETE`; pharmacy availability is unaffected | OD-087, OD-088, and OD-092 decisions |
 | GAP-002-015 | OPEN — CLINICAL | Thirty-eight canonical medication concepts have no supporting clinical documentation in SRC-004 | Intakes, contraindications, labs, visits, and protocols cannot be assigned | OD-094 decision and approved clinical sources |
 
 ## Resolved source dependencies

@@ -70,13 +70,17 @@ The clinical-documentation bundle is registered and under semantic review. It
 contains important conflicts between Eden-approved and Beluga-source materials;
 affected rules cannot be promoted until the assigned owner resolves them.
 
-The Eden Pharmacy formulary is normalized. Pharmacy review is still required for
-native SKU identifiers, per-unit/package semantics, probable duplicates, and 19
-ambiguous groupings.
+The Eden Pharmacy formulary is normalized. All 50 canonical medication concepts
+are pharmacy-available. Pharmacy review is still required for native SKU
+identifiers, per-unit/package semantics, probable duplicates, and the Pharmacy-
+owned ambiguity classifications.
 
-All 50 canonical medication concepts remain blocked from patient launch because
-Care/Optimize placement, state availability, final retail pricing, and marketplace
-visibility are not established. Thirty-eight also lack clinical documentation.
+Readiness is tracked by independent dimensions rather than a binary launch label.
+Thirty-five medication concepts have complete proposed canonical mapping; 15 need
+mapping review. Twelve have clinical source material mapped and 38 have no imported
+clinical source material. Missing clinical documentation is recorded as `UNKNOWN`,
+not as evidence that an available medication cannot launch. No authoritative source
+in this package confirms a hard launch blocker.
 
 The raw clinical bundle and pharmacy workbook remain outside Git. The Canon
 repository stores hashes, provenance, normalized outputs, and conflicts rather

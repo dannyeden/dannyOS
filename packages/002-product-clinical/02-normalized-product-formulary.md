@@ -11,13 +11,15 @@ source row and separating pharmacy facts from proposed canonical groupings.
 
 | Object | Owner | Identity and meaning |
 | --- | --- | --- |
-| Product | Commerce | Stable patient-facing care product |
-| Medication | Clinical | Canonical therapeutic or medicinal concept independent of vendor |
+| Patient-facing Medication | Commerce | Stable patient-facing medication identity and approved display concept |
+| Clinical Medication Concept | Clinical | Canonical therapeutic or medicinal concept independent of vendor and display naming |
 | Formulation | Clinical | Ingredient composition, route, and dosage form |
+| Additive | Clinical / Pharmacy | Separately identified additional ingredient that changes a preparation without being hidden in its display name |
 | Strength | Clinical | Normalized amount and unit associated with a Formulation |
 | Package | Operations | Dispensable quantity, unit, and packaging presentation |
-| Pharmacy SKU | Operations / pharmacy source | Pharmacy-specific catalog or inventory identity for a Package |
-| Product Fulfillment Mapping | Operations | Effective-dated mapping from Product and clinical authorization to eligible Pharmacy SKUs |
+| Pharmacy SKU or Source Reference | Operations / Pharmacy | Pharmacy-specific catalog, inventory identity, or exact source-row reference for a Package |
+| Pharmacy Source | Operations / Pharmacy | Stable identity of the dispensing source that owns the native configuration |
+| Product Fulfillment Mapping | Operations | Effective-dated mapping from a patient-facing Medication and clinical authorization to eligible Pharmacy SKUs |
 
 Ownership is proposed pending Clinical and Pharmacy review. No shared identifier
 may substitute for two levels of the hierarchy.
@@ -53,13 +55,22 @@ provenance, and effective interval.
 
 ## Mapping invariants
 
-- A Product MUST NOT use a Pharmacy SKU as its identifier.
+- A patient-facing Medication MUST NOT use a clinical concept, Formulation,
+  Additive, Strength, Package, Pharmacy SKU, or Pharmacy Source as its identifier.
 - A Formulation or Strength change creates a distinct identity or versioned mapping;
   it is not a label edit.
 - Pharmacy-native descriptions are preserved as source values alongside normalized data.
 - Unparseable or conflicting values enter the Gap Register; they are not guessed.
 - Mappings identify source, reviewer, approval, effective interval, and supersession.
 - Product continuity is preserved when a pharmacy, Package, or SKU changes.
+- Deprecating a Formulation, Additive, Strength, Package, Pharmacy SKU, or Pharmacy
+  Source mapping prevents new selection after its effective end; it does not
+  deprecate the patient-facing Medication.
+- Historical Treatment, Prescription, and Fill records retain immutable identifiers
+  and the effective configuration snapshot. Deprecation never erases or rewrites
+  historical use.
+- Deprecating a patient-facing Medication requires an explicit, separate lifecycle
+  decision; it cannot occur as a side effect of a lower-level deprecation.
 
 ## Normalization workflow
 
@@ -82,7 +93,8 @@ The 2026-08-03 snapshot contains:
 - 101 medication pharmacy configurations after four exact duplicate rows share
   canonical configurations;
 - six apparent duplicate groups, including two probable pairs left unmerged;
-- 19 ambiguous groupings requiring Pharmacy decisions; and
+- 19 ambiguous groupings classified for Pharmacy, Clinical, or normalization
+  disposition; and
 - one multi-medication kit separated from the medication catalog.
 
 `CFG-EP-*` is an internal canonical configuration reference, not a pharmacy-native

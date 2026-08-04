@@ -1,26 +1,26 @@
-record_type,record_id,classification,source_rows,canonical_reference,issue,normalization_action_or_owner
-APPARENT DUPLICATE,DUP-001,EXACT,49; 81,MED-012,"Sildenafil troche 100mg, quantity 30 appears identically in two source categories",MERGED into one canonical pharmacy configuration; both rows preserved
-APPARENT DUPLICATE,DUP-002,EXACT,50; 82,MED-019,"Sildenafil/tadalafil troche 50mg/10mg, quantity 30 appears identically in two source categories",MERGED into one canonical pharmacy configuration; both rows preserved
-APPARENT DUPLICATE,DUP-003,EXACT,51; 83,MED-020,"Tadalafil troche 10mg, quantity 30 appears identically in two source categories",MERGED into one canonical pharmacy configuration; both rows preserved
-APPARENT DUPLICATE,DUP-004,EXACT,52; 84,MED-020,"Tadalafil troche 20mg, quantity 30 appears identically in two source categories",MERGED into one canonical pharmacy configuration; both rows preserved
-APPARENT DUPLICATE,DUP-005,PROBABLE,26; 76,MED-005,"Bi-mix/Bimix rows share composition, package, and prices but differ in spelling, strength wording, category, and total-mg field",NOT merged — OPEN — PHARMACY
-APPARENT DUPLICATE,DUP-006,PROBABLE,30; 77,MED-009,"Tri-mix/Trimix rows share composition, package, and prices but differ in spelling, strength wording, category, and total-mg field",NOT merged — OPEN — PHARMACY
-AMBIGUOUS GROUPING,AMB-001,UNRESOLVED,10; 11-13,MED-003,Whether Bupropion/Naltrexone MR row 10 is the same capsule formulation as rows 11-13,OPEN — PHARMACY
-AMBIGUOUS GROUPING,AMB-002,UNRESOLVED,31-33,MED-010,One product label combines five alternative hormone compositions and uses strength 'Any',OPEN — PHARMACY
-AMBIGUOUS GROUPING,AMB-003,UNRESOLVED,35,MED-006,"Progesterone suppository has no strength, package, or price",OPEN — PHARMACY
-AMBIGUOUS GROUPING,AMB-004,UNRESOLVED,37,MED-013,Three anastrozole strengths share one per-unit source row,OPEN — PHARMACY
-AMBIGUOUS GROUPING,AMB-005,UNRESOLVED,39,MED-015,Two clomiphene strengths share one per-unit source row,OPEN — PHARMACY
-AMBIGUOUS GROUPING,AMB-006,UNRESOLVED,41,MED-017,Three enclomiphene strengths share one per-unit source row,OPEN — PHARMACY
-AMBIGUOUS GROUPING,AMB-007,UNRESOLVED,42-46,MED-018,Hormone troche composition and strength are variable; source labels mix regimen frequency and package quantity,OPEN — PHARMACY
-AMBIGUOUS GROUPING,AMB-008,UNRESOLVED,47,MED-006,Four progesterone strengths share one per-unit source row,OPEN — PHARMACY
-AMBIGUOUS GROUPING,AMB-009,UNRESOLVED,48,MED-006,Two modified-release progesterone strengths share one per-unit source row,OPEN — PHARMACY
-AMBIGUOUS GROUPING,AMB-010,UNRESOLVED,63,MED-028,Myers-like Cocktail strength string is truncated in the workbook,OPEN — PHARMACY
-AMBIGUOUS GROUPING,AMB-011,UNRESOLVED,78; 80,MED-037,Bremelanotide nasal and sublingual preparations omit concentration,OPEN — PHARMACY
-AMBIGUOUS GROUPING,AMB-012,UNRESOLVED,88-89,MED-039,Ketamine capsule and troche rows omit strength,OPEN — PHARMACY
-AMBIGUOUS GROUPING,AMB-013,UNRESOLVED,94-95,MED-043,Pain Cream omits active ingredients and leaves an uncovered package boundary at exactly 59-60 grams,OPEN — PHARMACY
-AMBIGUOUS GROUPING,AMB-014,UNRESOLVED,96,MED-044,Tretinoin row combines a concentration range and three package sizes,OPEN — PHARMACY
-AMBIGUOUS GROUPING,AMB-015,UNRESOLVED,101,NONMED-001,Hair Loss Treatment Kit combines three medication products and an incomplete third package unit,OPEN — PHARMACY
-AMBIGUOUS GROUPING,AMB-016,UNRESOLVED,98,MED-046,Finasteride/Minoxidil Foam omits strength and package,OPEN — PHARMACY
-AMBIGUOUS GROUPING,AMB-017,UNRESOLVED,102,MED-049,Minoxidil Cream uses a concentration range and omits package,OPEN — PHARMACY
-AMBIGUOUS GROUPING,AMB-018,UNRESOLVED,105,MED-049,Minoxidil Troche uses a strength range in one per-unit source row,OPEN — PHARMACY
-AMBIGUOUS GROUPING,AMB-019,UNRESOLVED,106-107,MED-050,Minoxidil/Finasteride capsule and troche rows omit strength and package,OPEN — PHARMACY
+record_type,record_id,classification,source_rows,canonical_reference,issue,normalization_action_or_owner,semantic_review_classification,source_rows_preserved
+APPARENT DUPLICATE,DUP-001,EXACT,49; 81,MED-012,"Sildenafil troche 100mg, quantity 30 appears identically in two source categories",MERGED into one canonical pharmacy configuration; both rows preserved,safe normalization,YES
+APPARENT DUPLICATE,DUP-002,EXACT,50; 82,MED-019,"Sildenafil/tadalafil troche 50mg/10mg, quantity 30 appears identically in two source categories",MERGED into one canonical pharmacy configuration; both rows preserved,safe normalization,YES
+APPARENT DUPLICATE,DUP-003,EXACT,51; 83,MED-020,"Tadalafil troche 10mg, quantity 30 appears identically in two source categories",MERGED into one canonical pharmacy configuration; both rows preserved,safe normalization,YES
+APPARENT DUPLICATE,DUP-004,EXACT,52; 84,MED-020,"Tadalafil troche 20mg, quantity 30 appears identically in two source categories",MERGED into one canonical pharmacy configuration; both rows preserved,safe normalization,YES
+APPARENT DUPLICATE,DUP-005,PROBABLE,26; 76,MED-005,"Bi-mix/Bimix rows share composition, package, and prices but differ in spelling, strength wording, category, and total-mg field",NOT merged — OPEN — PHARMACY,preserve as separate configurations,YES
+APPARENT DUPLICATE,DUP-006,PROBABLE,30; 77,MED-009,"Tri-mix/Trimix rows share composition, package, and prices but differ in spelling, strength wording, category, and total-mg field",NOT merged — OPEN — PHARMACY,preserve as separate configurations,YES
+AMBIGUOUS GROUPING,AMB-001,UNRESOLVED,10; 11-13,MED-003,Whether Bupropion/Naltrexone MR row 10 is the same capsule formulation as rows 11-13,OPEN — PHARMACY,preserve as separate configurations,YES
+AMBIGUOUS GROUPING,AMB-002,UNRESOLVED,31-33,MED-010,One product label combines five alternative hormone compositions and uses strength 'Any',OPEN — PHARMACY,pharmacy review required,YES
+AMBIGUOUS GROUPING,AMB-003,UNRESOLVED,35,MED-006,"Progesterone suppository has no strength, package, or price",OPEN — PHARMACY,pharmacy review required,YES
+AMBIGUOUS GROUPING,AMB-004,UNRESOLVED,37,MED-013,Three anastrozole strengths share one per-unit source row,OPEN — PHARMACY,pharmacy review required,YES
+AMBIGUOUS GROUPING,AMB-005,UNRESOLVED,39,MED-015,Two clomiphene strengths share one per-unit source row,OPEN — PHARMACY,pharmacy review required,YES
+AMBIGUOUS GROUPING,AMB-006,UNRESOLVED,41,MED-017,Three enclomiphene strengths share one per-unit source row,OPEN — PHARMACY,pharmacy review required,YES
+AMBIGUOUS GROUPING,AMB-007,UNRESOLVED,42-46,MED-018,Hormone troche composition and strength are variable; source labels mix regimen frequency and package quantity,OPEN — PHARMACY,clinical review required,YES
+AMBIGUOUS GROUPING,AMB-008,UNRESOLVED,47,MED-006,Four progesterone strengths share one per-unit source row,OPEN — PHARMACY,pharmacy review required,YES
+AMBIGUOUS GROUPING,AMB-009,UNRESOLVED,48,MED-006,Two modified-release progesterone strengths share one per-unit source row,OPEN — PHARMACY,pharmacy review required,YES
+AMBIGUOUS GROUPING,AMB-010,UNRESOLVED,63,MED-028,Myers-like Cocktail strength string is truncated in the workbook,OPEN — PHARMACY,pharmacy review required,YES
+AMBIGUOUS GROUPING,AMB-011,UNRESOLVED,78; 80,MED-037,Bremelanotide nasal and sublingual preparations omit concentration,OPEN — PHARMACY,pharmacy review required,YES
+AMBIGUOUS GROUPING,AMB-012,UNRESOLVED,88-89,MED-039,Ketamine capsule and troche rows omit strength,OPEN — PHARMACY,pharmacy review required,YES
+AMBIGUOUS GROUPING,AMB-013,UNRESOLVED,94-95,MED-043,Pain Cream omits active ingredients and leaves an uncovered package boundary at exactly 59-60 grams,OPEN — PHARMACY,clinical review required,YES
+AMBIGUOUS GROUPING,AMB-014,UNRESOLVED,96,MED-044,Tretinoin row combines a concentration range and three package sizes,OPEN — PHARMACY,pharmacy review required,YES
+AMBIGUOUS GROUPING,AMB-015,UNRESOLVED,101,NONMED-001,Hair Loss Treatment Kit combines three medication products and an incomplete third package unit,OPEN — PHARMACY,safe normalization,YES
+AMBIGUOUS GROUPING,AMB-016,UNRESOLVED,98,MED-046,Finasteride/Minoxidil Foam omits strength and package,OPEN — PHARMACY,pharmacy review required,YES
+AMBIGUOUS GROUPING,AMB-017,UNRESOLVED,102,MED-049,Minoxidil Cream uses a concentration range and omits package,OPEN — PHARMACY,pharmacy review required,YES
+AMBIGUOUS GROUPING,AMB-018,UNRESOLVED,105,MED-049,Minoxidil Troche uses a strength range in one per-unit source row,OPEN — PHARMACY,pharmacy review required,YES
+AMBIGUOUS GROUPING,AMB-019,UNRESOLVED,106-107,MED-050,Minoxidil/Finasteride capsule and troche rows omit strength and package,OPEN — PHARMACY,pharmacy review required,YES

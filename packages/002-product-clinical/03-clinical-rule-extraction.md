@@ -1,6 +1,6 @@
 # Clinical Rule Extraction Model
 
-**Status:** Proposed architecture; source population blocked
+**Status:** Proposed architecture; candidate source population extracted; Clinical approval pending
 
 ## Purpose
 
